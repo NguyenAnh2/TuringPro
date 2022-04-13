@@ -1,0 +1,40 @@
+.question {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+    &__img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__text {
+        position: absolute;
+        color: $white-color;
+        top: 0;
+        font-size: 64px;
+        font-weight: 600;
+        max-width: 550px;
+        margin-top: 90px;
+        margin-left: 85px;
+        font-weight: bold;
+    }
+    &__btn {
+        position: absolute;
+        bottom: 40px;
+        margin-left: 85px;
+        padding: 15px 25px;
+        background-color: $white-color;
+        color: $background-color;
+        text-decoration: none;
+        line-height: 15px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        transition: 0.2s linear;
+    }
+    &__btn:hover {
+        opacity: 0.7;
+    }
+    
+}

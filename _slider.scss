@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+    margin: 0px auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    overflow: hidden;
+    background-color: black;
+    &__img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+    &__content {
+        position: absolute;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        font-size: 48px;
+        bottom: calc(65px + 90px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__content h2{
+        margin-bottom: 8px;
+    }
+    &__content button {
+        outline: none;
+        border: transparent;
+        border-radius: 100px;
+        padding: 12px 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #c053bb;
+        margin-top: 24px;
+        transition: 0.2s linear;
+        cursor: pointer;
+    }
+    &__content button:hover {
+        opacity: 0.9;
+    }
+}

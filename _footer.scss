@@ -1,0 +1,86 @@
+.footer {
+    position: relative;
+    margin-bottom: 45px;
+    &__content {
+        display: flex;
+    }
+    margin-top: 55px;
+    &__items {
+        max-width: 25%;
+        width: 100%;
+    }
+    &__items--header {
+        @include title;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    &__item {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__item a {
+        color: $background-color;
+        text-decoration: none;
+    }
+    &__item a:hover {
+        text-decoration: underline;
+    }
+    &__line {
+        width: 100%;
+        height: 1px;
+        opacity: 0.5;
+        background-color: $text-color;
+        margin: 50px 0px;
+    }
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__permistion-ul {
+        display: flex;
+        align-items: center;
+    }
+    &__permistion-li {
+        margin-right: 25px;
+        list-style: disc;
+    }
+    &__permistion-li a {
+        color: $background-color;
+        text-decoration: none;
+    }
+    &__permistion-li a:hover {
+        text-decoration: underline;
+    }
+    &__permistion-li:first-child {
+        list-style: none;
+    }
+
+    &__social-ul {
+        display: flex;
+        align-items: center;
+    }
+    &__social-li {
+        margin-right: 25px;
+    }
+    &__social-li a {
+        color: $background-color;
+
+    }
+    .social__icon {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .social__icon:last-child{
+        margin-right: -25px;
+    }
+    .social__earth {
+        margin-bottom: -3px;
+    }
+}

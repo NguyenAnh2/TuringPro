@@ -1,0 +1,211 @@
+@media (max-width: 1023px) {
+    /* TABLET HEADER  */
+    .header__nav {
+        margin: 0 40px;
+    }
+    .header__nav-logo-tablet {
+        display: block;
+    }
+    .header__nav-list-first {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,150%);
+        z-index: 1;
+    }
+    .header__section {
+        width: calc(100% - 80px);
+        transform: translateY(100%);
+        overflow: hidden;
+    }
+    .header__section-item-search {
+        padding: 14px;
+    }
+    .header__section-item-select-full {
+        padding: 14px 100px 14px 24px;
+    }
+    .header__section-list {
+        max-width: 916px;
+        width: 100%;
+        margin: 0 40px;
+    }
+    .header__section-item-search span {
+        display: none;
+    }
+    .header__input-scroll {
+        left: 37.5%;
+        width: 240px;
+    }
+
+    /* TABLET SLIDER   */
+    .slider {
+        padding-top: 170px;
+    }
+
+    /* TABLET PLACE   */
+    .place {overflow: hidden;}
+    .place__list, .place__title {
+        margin: 0 40px;
+    }
+    .place__title {
+        margin-bottom: 32px;
+    }
+    .place__item {
+        margin-left: 20px;
+    }
+
+    /* TABLET EXPERIENCE   */
+    .experience__list , .experience__title{
+        margin: 0 40px;
+    }
+    .experience {overflow: hidden;}
+    .experience__title {
+        margin-bottom: 32px;
+    }
+    .experience__item-text {
+        font-size: 32px;
+        line-height: 32px;
+        max-width: 90%;
+    }
+
+    /* TABLET FOOTER   */
+    .footer__items {
+        max-width: 100%;
+    }
+    .footer__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 40px;
+    }
+    .footer__contact {
+        /* 2 WAY */
+        /* display: grid; */
+        /* grid-template-columns: repeat(1, 1fr); */
+        /* gap: 20px; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer__social {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    /* MOBILE HEADER  */
+    .header__nav {
+        display: none;
+    }
+    .header__section {
+        display: none;
+    }
+    .header__input-scroll {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: calc(100% - 64px);
+        background-color: white;
+        transform: translateX(-50%);        
+        display: flex !important;
+    }
+    .header__input-scroll input {
+        font-size: 14px;
+    }
+
+    /* MOBILE SLIDER */
+    .slider {
+        padding-top: 32px;
+    }
+    .slider__title {
+        font-size: 16px;
+    }
+    .slider__content p {
+        font-size: 22px;
+    }
+    .slider__content button {
+        font-size: 12px;
+        padding: 10px 14px;
+        margin-bottom: -30px;
+    }
+
+    /* MOBILE PLACE  */
+    .place__item {
+        max-width: 70%;
+        width: 100%;
+        flex-shrink: 0;
+    }
+    .place__item-content-title {
+        font-size: 24px;
+    }
+    .place__item-content-desc {
+        font-size: 14px;
+    }
+
+    /* MOBILE EXPERIENCE */
+    .experience__list {
+        flex-direction: column;
+        gap: 32px;
+        width: calc(100%- 80px);
+    }
+    .experience__item {
+        width: 100%;
+    }
+    .experience__item-img {
+        width: calc(100% - 64px);
+        border-radius: 16px;
+    }
+    .experience__item-text {
+        margin-top: -30px;
+        margin-left: -30px;
+        font-size: 18px;
+    }
+    .experience__item-btn {
+        padding: 12px 16px;
+        margin-left: -30px;
+        bottom: 100%;
+    }
+
+    /* MOBILE QUESTION  */
+    .question__text {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-left: 32px;
+    }
+    .question__btn {
+        font-size: 12px;
+        margin-left: 32px;
+        margin-bottom: -12px;
+        padding: 12px 16px;
+    }
+
+    /* MOBILE FOOTER  */
+    .footer__content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .footer__social {
+        top: 0;
+    }
+    .footer__permistion {
+        bottom: 0;
+    }
+    .social__icon {display: none;}
+    .footer__contact {
+        width: calc(100% - 32px);
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .footer__permistion-ul, .footer__social-ul {
+        flex-wrap: wrap;
+    }
+    .footer__permistion-li {
+        font-size: 14px;
+    }
+
+    /* PLACE FIX*/
+    .place__item {
+        width: 45%;
+    }
+}

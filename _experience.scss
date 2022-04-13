@@ -1,0 +1,52 @@
+.experience {
+    background-color: $white-color;
+    &__title {
+        @include title;
+    }
+    &__list {
+        display: flex;
+        width: 100%;
+    }
+    &__item {
+        position: relative;
+        width: 50%;
+    }
+    &__item:first-child {
+        padding-right: 28px;
+    }
+    &__item-img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    &__item-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 45px 0 0 45px;
+    }
+    &__item-text {
+        color: $white-color;
+        line-height: 44px;
+        font-size: 38px;
+        font-weight: 500;
+        max-width: 65%;
+    }
+    &__item-btn {
+        margin-top: 32px;
+        outline: none;
+        border: transparent;
+        border-radius: 14px;
+        padding: 16px 32px;
+        transition: 0.2 linear;
+        cursor: pointer;
+    }
+    &__item-btn p {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &__item-btn:hover {
+        opacity: 0.9;
+    }
+}
