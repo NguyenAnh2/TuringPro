@@ -6,7 +6,7 @@
         {
             "label": "SCSS",
             "type": "shell",
-            "command": "sass ./app.scss ./style.css --watch"
+            "command": "sass ./SCSS/app.scss ./style.css --watch"
         }
     ]
 }

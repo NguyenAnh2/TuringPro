@@ -4,7 +4,6 @@
   margin: 0 auto;
 }
 
-/* RESET CSS  */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -223,6 +222,7 @@ table {
   background-color: #d90964;
 }
 .header__input-scroll {
+  display: none;
   position: relative;
   display: flex;
   justify-content: space-between;
